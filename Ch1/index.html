@@ -7,15 +7,17 @@
 
     <style>
       h1,
-      h3,
       p,
-      ul {
+      ul,
+      h2, 
+      section {
         font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
           "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          color: white;
       }
       p::first-letter {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        font-size: 26px;
+        font-size: 30px;
         font-weight: bold;
       }
 
@@ -34,12 +36,19 @@
       }
 
       .story {
-        font-size: 20px;
+        font-size: 25px;
       }
 
-      .destiny {
+      .explore, .alliance, .destiny {
         text-decoration: none;
+        color: aqua;
       }
+      /* HERE THE AQUA IS WORKING FOR BOTH THE .alliance AND .destiny AND .explore */
+
+      .destiny:hover {
+        color: red;
+      }
+      /* IF I ADD .alliance TO THIS IT DOESNT CORRECTLY ADD THE RULES TO .alliance AND .destiny AND .explore */
 
       .bio {
         text-decoration: underline;
@@ -64,6 +73,8 @@
         background-image: url("6510088-0-image-a-18_1542881166032.jpg");
         background-size: 100%;
       }
+
+
     </style>
   </head>
 
@@ -82,7 +93,7 @@
         class="bluegreen"
       />
       <figcaption>
-        <h3 class="bio">Thrives' Bio</h3>
+        <h2 class="bio">Thrives' Bio</h2>
         <ul>
           <li>Microorganisms make up about 70% of the marine biomass</li>
           <li>
@@ -103,8 +114,9 @@
       <p class="story">
         Once upon a time in the vast, deep ocean, a tiny bacteria named Thrives
         emerged. You're about to embark on a journey to shape its
-        <a href="./destinyOutline.html" class="destiny">destiny</a>.
+        <a href="/linkAdventures/Ch2/destinyOutline.html" class="destiny">destiny</a>.
       </p>
+      <!-- NEED TO CREATE THE OUTLINE FOR THE STORY AND ADD IT TO THE DESTINY PAGE AND LINK IT -->
 
       <br />
 
@@ -118,13 +130,16 @@
         <hr class="oddHR" />
         <hr class="evenHR" />
         <hr class="oddHR" />
-        <hr class="evenHR" />
-        <hr class="oddHR" />
       </div>
 
       <br />
 
-      <h2></h2>
+      <h2>Little Thrive finds itself at a crossroads:</h2>
+      <section>
+        1. Should it form<a href="/linkAdventures/Ch2/alliances.html" class="alliance"> alliances </a>with friendly fish?
+        <br>
+        2. Does it<a href="/linkAdventures/Ch2/explore.html" class="explore"> explore </a>this enchanting realm?
+      </section>
     </footer>
   </body>
 </html>
